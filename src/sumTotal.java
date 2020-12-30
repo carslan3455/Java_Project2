@@ -36,7 +36,7 @@ public class sumTotal {
 
         String[] array={"$12" , "$22" , "$0","€9" , "€40" , "$1","€12", "$2","$0"};
 
-        int tplm = 0;
+        int tplm = 0;   // double yapinca testi gecemiyor
 
 
 

@@ -23,14 +23,17 @@ public class maxNumber {
 
 
     public static void main(String[] args) {
-
+                    //      0       1         2         3
        int[][] array = {{1,2,3}, {2,3,1} , {5,5,5} , {2,10,3}};
+                    //   0 1 2    0 1 2     0 1 2     0 1 2
        int max=array[0][0];
 
-        for(int i=0; i<4; i++){
-            for(int j=0; j<3; j++){
+        for(int i=0; i<array.length; i++){            // for(int i=0; i<4; i++){
+            for(int j=0; j<array[i].length; j++){     //    for(int j=0; j<3; j++){
                 if (array[i][j]>max)
                     max=array[i][j];
+
+               // max = Math.max(max,array[i][j]);
 
             }
         }

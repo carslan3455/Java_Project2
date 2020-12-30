@@ -32,7 +32,7 @@ public class arrayContains {
         Scanner scan = new Scanner(System.in);
         String myStr = scan.nextLine();
         String[] arr = myStr.split(" ");
-        int[] myArr = new int[5];
+        int[] myArr = new int[arr.length];           // int[] myArr = new int[5];
         for(int i = 0 ; i< arr.length ; i++){
             int num = Integer.parseInt(arr[i]);
             myArr[i] = num;
@@ -56,18 +56,31 @@ public class arrayContains {
 //        UseThisArray1 ve UseThisArray2 array isimlerini kullan
 
 
-        for (int i=0; i<UseThisArray1.length; i++){
+//              1.Yöntem
+//        for (int i=0; i<UseThisArray1.length; i++){
+//
+//            for(int j=0; j<UseThisArray2.length; j++){
+//
+//                if(UseThisArray1[j]==UseThisArray1[i]){
+//                    System.out.println(true);
+//                }else System.out.println(false);
+//            }
+//        }
+        int sayac = 0;
 
-            for(int j=0; j<UseThisArray2.length; j++){
+        for (int i=0; i<UseThisArray2.length; i++){         //   1 2
 
-                if(UseThisArray1[j]==UseThisArray1[i]){
-                    System.out.println(true);
-                }else System.out.println(false);
+            for(int j=0; j<UseThisArray1.length; j++){      // 1 2 3
+
+                if(UseThisArray2[i]==UseThisArray1[j]) {
+                    sayac++;
+                }
             }
         }
 
-
-
+        if (sayac==UseThisArray2.length){
+            System.out.println(true);
+        }else System.out.println(false);
 
     }
 }

@@ -32,8 +32,10 @@ public class minNumber {
 
         for(int i=0; i<4; i++){
             for(int j=0; j<3; j++){
-                if (array[i][j]<min)
-                    min=array[i][j];
+//                if (array[i][j]<min)
+//                    min=array[i][j];
+//
+                min = Math.min(min,array[i][j]);
 
             }
         }

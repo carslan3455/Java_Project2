@@ -36,6 +36,14 @@ public class sameFirstAndLast {
 
         String[] useThisArray = myStr.split(" ");
 
+//        int [] intArr = new int[useThisArray.length];
+//
+//        for (int i = 0; i < intArr.length; i++) {
+//
+//            int num = Integer.parseInt(useThisArray[i]);
+//            intArr[i] = num;
+//        }
+
       //        code start here
 
       // Tek Boyutlu
@@ -45,12 +53,15 @@ public class sameFirstAndLast {
 
 
 
-            if (useThisArray[0].equalsIgnoreCase(useThisArray[useThisArray.length-1])){
+            if (useThisArray[0].equals(useThisArray[useThisArray.length-1])){
                 System.out.println(true);
             }else
             System.out.println(false);
 
-
+//
+//            if (intArr[0]==intArr[intArr.length-1]){
+//                System.out.println(true);
+//            }else System.out.println(false);
 
     }
 

@@ -39,34 +39,47 @@ public class diffBetweenMaxMin {
 
         int[] useThisArray = new int[strArr.length];
 
-        for(int i = 0 ; i< strArr.length ; i++){
+        for (int i = 0; i < strArr.length; i++) {
 
-            int num =Integer.parseInt(strArr[i]);
+            int num = Integer.parseInt(strArr[i]);
             useThisArray[i] = num;
 
         }
-    // 1 Boyutlu
-    // Your code start here. Don't remove or change anything before this line. Your array is -> useThisArray in line 27
-    // Kodlamaya burdan başla.Bu satırdan önceki satırlarda hiçbirşeyi kaldırma ve degiştirme. Kullanacağın array 27.ci satırda  --> useThisArray
+        // 1 Boyutlu
+        // Your code start here. Don't remove or change anything before this line. Your array is -> useThisArray in line 27
+        // Kodlamaya burdan başla.Bu satırdan önceki satırlarda hiçbirşeyi kaldırma ve degiştirme. Kullanacağın array 27.ci satırda  --> useThisArray
         //Math.min(v1, v2) ve   Math.max(v1, v2) methodları en küçük ve en büyük öğeleri return eder.
 
-        int max=useThisArray[0];
-        int min=useThisArray[1];
+        int max = useThisArray[0];
+        int min = useThisArray[1];
 
-        for(int i=0; i<useThisArray.length; i++){
+//        for (int i = 0; i < useThisArray.length; i++) {
+//
+//            if (useThisArray[i] > max) {
+//                max = useThisArray[i];
+//
+//            }
+//            if (useThisArray[i] < min) {
+//                min = useThisArray[i];
+//            }
+//
+//
+//        }
 
-            if(useThisArray[i]>max){
-                max=useThisArray[i];
+        for (int i = 0; i < useThisArray.length; i++) {
 
-            }if (useThisArray[i]<min){
-                min=useThisArray[i];
-            }
+            max = Math.max(max, useThisArray[i]);
+            min = Math.min(min, useThisArray[i]);
+        }
 
+        System.out.println(max - min);
 
+//        int max1 = Math.max(12,5);
+//        int min1 = Math.min(12,5);
+//
+//        System.out.println("max1 = " + max1);
+//        System.out.println("min1 = " + min1);
 
-
-         }
-        System.out.println(max-min);
     }
 }
 

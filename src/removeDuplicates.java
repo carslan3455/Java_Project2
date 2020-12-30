@@ -72,13 +72,13 @@ public class removeDuplicates {
 //        int elemanSay=useThisArray.length;
 //        int x=0;
 //
-//        int [] dizi=new int[elemanSay];
+//        int [] dizi=new int[elemanSay];  // 12
 //
 //        for(int i = 0 ; i < elemanSay-1 ; i++){
 //
 //            if (useThisArray[i]!=useThisArray[i+1])
 //            {
-//                dizi[x++]=useThisArray[i];
+//                dizi[x++]=useThisArray[i];    // 5
 //
 //            }
 //
@@ -94,19 +94,20 @@ public class removeDuplicates {
 
         int a= useThisArray.length;
         int[] useThisLine=new int[a];
-        int p=0;
+        int sayac=0;
 
         for(int j = 0 ; j <useThisArray.length-1 ; j++)
         {
             if (useThisArray[j] == useThisArray[j + 1])  continue;
-            useThisLine[p++] = useThisArray[j]; // 1 2 3
+            useThisLine[sayac++] = useThisArray[j]; // 1 2 3
 
         }
-        useThisLine[p]=useThisArray[useThisArray.length-1];
+        useThisLine[sayac]=useThisArray[useThisArray.length-1];
 
-        int[] sonDizi=new int[p+1];
 
-        for(int j = 0 ; j <=p ; j++)
+        int[] sonDizi=new int[sayac+1];  // Sifir olmadan yeni bir array olusturmak icin bu islemi yaptik
+
+        for(int j = 0 ; j < sonDizi.length ; j++)
             sonDizi[j]=useThisLine[j];
 
         System.out.println(Arrays.toString(sonDizi));
@@ -115,6 +116,9 @@ public class removeDuplicates {
 
 
     }
+
+
+
 
 
 }

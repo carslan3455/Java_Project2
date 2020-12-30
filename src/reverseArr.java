@@ -44,16 +44,18 @@ public class reverseArr {
      //   Tek Boyutlu
         //        Koda burdan başlayın
 
-        for(int i=useThisArray.length-1; i>=0; i--){
+//        for(int i=useThisArray.length-1; i>=0; i--){
+//
+//            System.out.print(useThisArray[i]+" ");
+//        }
 
-            System.out.print(useThisArray[i]+" ");
-        }
+        String[] newArray = new String[useThisArray.length];
 
-        /*String[] newArray = new String[useThisArray.length];
         for (int i =0; i<useThisArray.length; i++){
             newArray[newArray.length-i-1]=useThisArray[i];
+            // ilk Array 0.index - yeni array son index
         }
-        System.out.println(Arrays.toString(newArray));*/
+        System.out.println(Arrays.toString(newArray));
 
     }
 
