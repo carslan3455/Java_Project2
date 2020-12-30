@@ -90,7 +90,7 @@ public class removeDuplicates {
 //        System.out.println(Arrays.toString(dizi));
 
 
-        //TODO MESUD BEY ÇÖZÜM:
+        //TODO ÇÖZÜM 2:
 
         int a= useThisArray.length;
         int[] useThisLine=new int[a];
@@ -102,6 +102,7 @@ public class removeDuplicates {
             useThisLine[sayac++] = useThisArray[j]; // 1 2 3
 
         }
+        // System.out.println(sayac);
         useThisLine[sayac]=useThisArray[useThisArray.length-1];
 
 
@@ -112,13 +113,6 @@ public class removeDuplicates {
 
         System.out.println(Arrays.toString(sonDizi));
 
-
-
-
     }
-
-
-
-
 
 }
